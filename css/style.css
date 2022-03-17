@@ -113,6 +113,10 @@ header{
 
 }*/
 
+#gallery img {
+    max-width:100%;
+}
+
 article{
 
     text-align: justify; 
@@ -164,7 +168,7 @@ footer{
 
         display: grid;
         grid-template-columns: 2fr 1fr;
-    
+   
     }
 
     figcaption{
@@ -196,7 +200,7 @@ footer{
 
     #gallery h2{
 
-        grid: 1/-1; 
+        grid-column: 1/-1; 
 
     }
 
