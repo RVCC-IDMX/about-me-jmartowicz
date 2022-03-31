@@ -55,7 +55,7 @@ header{
     width:200px;
 }
 
-#hobbies,#bio, #hero, article,#gallery  {
+#hobbies,#bio, #hero, article,#gallery,#video  {
 
 
     background-color:#939EAD ;
@@ -151,6 +151,21 @@ article p::first-letter{
 
 
 }
+
+#video li{
+
+    
+    list-style-type: none; 
+    padding-left: 0px; 
+    padding-bottom: 10px; 
+
+}
+
+#video iframe{
+
+    max-width: 90%;
+
+ }
 
 footer{
 
