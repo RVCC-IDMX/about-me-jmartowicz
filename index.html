@@ -169,7 +169,7 @@
 
             <h2>Contact Us: </h2>
 
-            <form id="contactForm" name = "contactForm">  
+            <form id="contactForm" name = "contactForm" method="post" data-netlify="true">  
 
                 <fieldset>
 
@@ -181,19 +181,19 @@
 
                         <label for="name">Name(required)</label>
 
-                        <input type="text" id="name" name="name" required >
+                        <input type="text" id="name" name="name" placeholder="Name" required >
 
                         <!---Email -->
                         
                         <label for="email">Email (required)</label>
 
-                        <input type="email" id="email" name="email" required >
+                        <input type="email" id="email" name="email" placeholder="Email" required >
                         
                         <!---Phone -->
                         
                         <label for="phone">Phone (optional)</label>
 
-                        <input type="tel" id="phone" name="phone" >
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" >
 
 
 
@@ -212,7 +212,7 @@
                         <!--Message -->
 
                         <label for="message">Message (optional)</label>
-                        <textaarea id="message" name="message" rows="8"></textaarea>
+                        <textarea id="message" name="message" rows="8" placeholder="Message"></textarea>
 
                         <!--Reply-->
 
@@ -223,7 +223,7 @@
                             <ul>
                                 <li>
                                     <input type="radio" id="message-yes"
-                                    name="reply">
+                                    name="reply" value="Yes a reply please. ">
                                     <label for="message-yes">Yes I would like a reply
                                     </label>
                                     
@@ -234,20 +234,14 @@
                                     <label for="message-no">No I would not like a reply
                                     </label>
                                 </li>
-
-
-
-
-
-
                             </ul>
-
-
-
-
-
-
                         </fieldset>
+
+                        <!--   Submit  -->
+
+                        <button type="submit">Send</button>
+
+
 
 
                     </div>
