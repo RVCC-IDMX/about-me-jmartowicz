@@ -237,8 +237,94 @@ footer{
 #formElements{
 
     display: grid; 
+    row-gap: .5em;
+
+    
+    background-color:#939EAD ;
+    border: 2px solid #59524C;
+    color: #59524C; 
+    margin: 2px;
+    border-radius: 2px; 
+    
 
 
+
+    
+
+
+
+}
+
+#contact{
+
+    padding: 1rem; 
+    max-width: 90%;
+    margin: 2rem auto; 
+    
+}
+
+fieldset{
+
+    border: 2px solid; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+legend{
+
+    background-color:#595242;
+    color: white; 
+    padding: 0.5rem; 
+
+}
+
+#contact label{
+
+    margin-left: 10px; 
+    margin-right: 10px; 
+
+    
+}
+
+#contact input, #contact textarea, #contact select, #contact button  {
+
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family:Bebas Neue;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    
+
+
+}
+
+#contact #phonetype , #contact ::placeholder{
+
+    color: #ADA193;
+    
+
+}
+
+#contact ul{
+    list-style:none; 
+    padding: 0px; 
+
+}
+
+#contact li{
+
+    margin: 1rem; 
+}
+
+#contact button{
+
+    background-color: #595242;
+    color: white;
+    border-radius: 1px;
+    max-width: 400px; 
+    justify-self: center;
+    width: 50%;
+    font-family:Bebas Neue;
 
 
 }
