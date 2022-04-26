@@ -117,6 +117,26 @@ header{
     max-width:100%;
 }
 
+#gallery hr{
+
+border: 2px solid #59524C; 
+margin: 25px;
+padding: 4px; 
+
+background-color: #FAECE1;
+box-shadow: inset 5px 5px 5px rgba(0.5,0.5,0.5,0.5);
+
+border-radius: 2px; 
+
+}
+
+
+#gallery hr:last-of-type { 
+    margin-bottom: 25px; 
+}
+
+
+
 article{
 
     text-align: justify; 
@@ -225,11 +245,6 @@ footer{
 
     }
 
-
-
-
-
-
 }
 
 /* Contact Form */
@@ -246,13 +261,6 @@ footer{
     margin: 2px;
     border-radius: 2px; 
     
-
-
-
-    
-
-
-
 }
 
 #contact{

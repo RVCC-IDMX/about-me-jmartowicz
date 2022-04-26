@@ -50,6 +50,8 @@ main {
 .logo img{
     height: 6vw;
     width: 6vw;
+    padding-right: 10px; 
+
 }
 
 .logo h1{
