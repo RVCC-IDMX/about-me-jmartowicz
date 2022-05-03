@@ -1,3 +1,5 @@
+/*Main Settings*/
+
 body{
     background-color: #FAECE1;
     color:#ADA193;
@@ -19,6 +21,8 @@ header{
 
 }
 
+/*Hero Settings*/
+
 #hero{
 
     background-color: #939EAD ;
@@ -37,6 +41,15 @@ header{
     border-radius: 200px; 
 }
 
+
+#hero img {
+
+    width:200px;
+}
+
+/*Bio Settings*/
+
+
 #bio{
 
     background-color:#939EAD ;
@@ -50,10 +63,8 @@ header{
 
 }
 
-#hero img {
+/*Overall Settings*/
 
-    width:200px;
-}
 
 #hobbies,#bio, #hero, article,#gallery,#video  {
 
@@ -73,9 +84,15 @@ header{
 
 }
 
+/*Hover Settings*/
+
+
  #hobbies:hover, #bio:hover, #hero:hover, article:hover, #gallery:hover {
     box-shadow: 7px 7px 7px rgba(0.5,0.5,0.5,0.5);;
 }
+
+
+/*Hobbies Settings*/
 
 
 
@@ -84,6 +101,23 @@ header{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+
+}
+
+#hobbies li{
+
+    list-style-type: none;
+    padding: none;
+    
+
+
+}
+
+#hero .ptitle , #bio .ptitle , #hobbies .ptitle{
+
+    text-decoration: underline solid #ADA193;
+    color: #59524C;
+    font-size: 20pt; 
 
 }
 
@@ -113,6 +147,9 @@ header{
 
 }*/
 
+/*Gallery Settings*/
+
+
 #gallery img {
     max-width:100%;
 }
@@ -128,6 +165,7 @@ box-shadow: inset 5px 5px 5px rgba(0.5,0.5,0.5,0.5);
 
 border-radius: 2px; 
 
+
 }
 
 
@@ -135,6 +173,7 @@ border-radius: 2px;
     margin-bottom: 25px; 
 }
 
+/*Article Settings*/
 
 
 article{
@@ -172,6 +211,9 @@ article p::first-letter{
 
 }
 
+/*Video Settings*/
+
+
 #video li{
 
     
@@ -186,6 +228,9 @@ article p::first-letter{
     max-width: 90%;
 
  }
+
+ /*Footer Settings*/
+
 
 footer{
 
@@ -202,7 +247,7 @@ footer{
     figure{
 
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
    
     }
 
@@ -243,6 +288,57 @@ footer{
 
         display: block; 
 
+    }
+
+    main
+    {
+        display: grid; 
+     grid-template-columns: 2fr 1fr;
+     grid-template-areas:
+     "hero hero"
+     "bio hobbies"
+     "gallery gallery"
+     "article article"
+     "video video"
+     "contact contact"
+     ; 
+    
+            }
+
+
+            #hero{
+                grid-area: hero;
+            }
+
+            #bio{
+                grid-area:bio;
+            }
+
+            #hobbies{
+                grid-area: hobbies;
+            }
+
+            #gallery{
+                grid-area: gallery; 
+            }
+            
+            article{
+
+                grid-area: article;
+
+            }
+
+            #video{
+
+                grid-area: video; 
+            }
+
+            #contact{
+                grid-area: contact; 
+            }
+
+    #contact{
+        max-width: 90%; 
     }
 
 }
