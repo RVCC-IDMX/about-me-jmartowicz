@@ -66,7 +66,7 @@ header{
 /*Overall Settings*/
 
 
-#hobbies,#bio, #hero, #blog,#gallery,#video, #blogmap  {
+#hobbies,#bio, #hero, #blog,#gallery,#video, #blogmap, #random  {
 
 
     background-color:#939EAD ;
@@ -87,7 +87,7 @@ header{
 /*Hover Settings*/
 
 
- #hobbies:hover, #bio:hover, #hero:hover, #blog:hover, #gallery:hover {
+ #hobbies:hover, #bio:hover, #hero:hover, #blog:hover, #gallery:hover, #random:hover, #blogmap:hover, #video:hover {
     box-shadow: 7px 7px 7px rgba(0.5,0.5,0.5,0.5);;
 }
 
@@ -173,10 +173,10 @@ border-radius: 2px;
     margin-bottom: 25px; 
 }
 
-/*Blog Settings*/
+/*Blog And Random Article Settings*/
 
 
-#blog{
+#blog, #random{
 
     text-align: justify; 
 
@@ -184,7 +184,7 @@ border-radius: 2px;
 
 }
 
-#blog h2{
+#blog h2, #random h2{
 
     text-align:center; 
 }
@@ -205,7 +205,7 @@ border-radius: 2px;
 
 }
 
-#blog img{
+#blog img, #random img{
 
     max-width: 100%; 
     float: none; 
