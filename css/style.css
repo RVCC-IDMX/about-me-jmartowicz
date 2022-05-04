@@ -66,7 +66,7 @@ header{
 /*Overall Settings*/
 
 
-#hobbies,#bio, #hero, article,#gallery,#video  {
+#hobbies,#bio, #hero, #blog,#gallery,#video, #blogmap  {
 
 
     background-color:#939EAD ;
@@ -87,7 +87,7 @@ header{
 /*Hover Settings*/
 
 
- #hobbies:hover, #bio:hover, #hero:hover, article:hover, #gallery:hover {
+ #hobbies:hover, #bio:hover, #hero:hover, #blog:hover, #gallery:hover {
     box-shadow: 7px 7px 7px rgba(0.5,0.5,0.5,0.5);;
 }
 
@@ -147,10 +147,10 @@ header{
 
 }*/
 
-/*Gallery Settings*/
+/*Gallery and Blog Image Settings*/
 
 
-#gallery img {
+#gallery img{
     max-width:100%;
 }
 
@@ -173,10 +173,10 @@ border-radius: 2px;
     margin-bottom: 25px; 
 }
 
-/*Article Settings*/
+/*Blog Settings*/
 
 
-article{
+#blog{
 
     text-align: justify; 
 
@@ -184,12 +184,12 @@ article{
 
 }
 
-article h2{
+#blog h2{
 
     text-align:center; 
 }
 
-article p::first-letter{
+#blog p::first-letter{
 
     font-size: 300%;
     border: 1px solid #59524C; 
@@ -203,18 +203,60 @@ article p::first-letter{
     box-shadow: 4px 4px 4px #59524C; 
     text-shadow: 1px 1px 1px #59524C;
 
+}
 
+#blog img{
 
+    max-width: 100%; 
+    float: none; 
+    padding: 5%; 
 
-
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
 
 }
+
+#blog a{
+
+    color: #59524C ;
+    font-size: 30pt; 
+    border: 1px solid #59524C; 
+    padding-left: 0.25ex;
+    padding-right: 0.25ex; 
+    background-color:#939EAD;
+
+    margin-right: 0.5ex;
+    margin-top: 0.25ex;
+
+    border-radius: 2px;
+    box-shadow: 4px 4px 4px #59524C; 
+    text-shadow: 1px 1px 1px #59524C;
+
+    letter-spacing: 2px; 
+    text-decoration: none; 
+
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center; 
+    max-width: 50%; 
+
+}
+
+#blog a:hover, #blog a:focus{
+
+    box-shadow: 7px 7px 7px #59524C;
+
+}
+
+
 
 /*Video Settings*/
 
 
-#video li{
+#video li, #blogmap li{
 
     
     list-style-type: none; 
@@ -223,7 +265,7 @@ article p::first-letter{
 
 }
 
-#video iframe{
+#video iframe, #blogmap iframe{
 
     max-width: 90%;
 
@@ -299,6 +341,7 @@ footer{
      "bio hobbies"
      "gallery gallery"
      "article article"
+     "blogmap blogmap"
      "video video"
      "contact contact"
      ; 
@@ -326,6 +369,11 @@ footer{
 
                 grid-area: article;
 
+            }
+
+            #blogmap{
+
+                grid-area: blogmap; 
             }
 
             #video{
