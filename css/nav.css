@@ -23,21 +23,6 @@ main {
     padding: 2vw;
 }
 
-/*navbar*/
-
-.navbar{
-
-    background-color: #59524C ;
-    color: #ADA193;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-
-
-}
-
-/*logo*/
 
 .logo{
 
@@ -58,63 +43,163 @@ main {
     font-size: 1.2em;
 }
 
-/* navigation list */
-
-.navbar-links li{
-
-    list-style: none;
-    display: block;
-    padding: 0.5em 0; 
-}
-
-/* style all a tags in header and then on hover */
-
-.navbar-links a{
-
-    color: #ADA193;
-    background-attachment: #59524C; 
-    font-size: 1.5rem; 
-    padding: 1rem 1.25rem; 
-    letter-spacing: 2px; 
-    text-decoration: none; 
-    display: inline-block;
-    
-}
-
-.navbar-links a:hover, .navbar-links a:focus{
+.nav__menu li.hoverboy :hover, .nav__menu li.hoverboy :focus{
 
     color: #59524C ;
     background-color: #ADA193;
     border-radius: 10px;
     outline: none;
 
+    padding: 2px; 
+
 
 }
 
-/*media query for non-mobile nav bar min-width set to with of nav elements such that no text wraps*/
+.nav__menu .hoverboy a :hover{
 
-@media screen and (min-width: 60rem) {
+    color:#ADA193; 
 
-    .navbar-links{
+    
+}
 
-        display: flex; 
-        justify-content: space-between; 
-        
+.nav__menu li:first-of-type :hover, .nav__menu li:first-of-type :focus{
+
+    color:#ADA193;
+    background-color: #59524C; 
+}
+
+
+
+
+
+.nav__menu li:hover, .nav__menu li:focus ~ ul.nav_menu a{
+
+    color: #59524C;
+    outline: none;
+
+}
+
+/* Hamburger Icon */
+
+
+body{
+
+    height: 100vh; 
+}
+
+*::before, *::after{
+
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0; 
+}
+
+.nav{
+
+    border-bottom: 1px solid #ADA193;
+}
+
+.nav__toggle{
+
+    position:absolute; 
+    cursor:pointer;
+    margin: 0rem 1rem;
+    right: 0; 
+}
+
+.nav svg{
+
+    width: 1.5rem;
+    fill: #ADA193; 
+
+}
+
+.nav .close{
+
+    display: none; 
+}
+
+.nav .menu{
+
+    margin-top: 0.2rem; 
+}
+
+#nav__checkbox{
+
+    display: none; 
+
+
+}
+
+.nav__menu{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem; 
+}
+
+.nav__menu li{ 
+    list-style: none; 
+    display: none; 
+    padding: 0.5em 0; 
+
+}
+
+.nav__menu li:first-child {
+
+    margin-right: auto; 
+    display: block; 
+   
+}
+
+.nav__menu a{
+    text-decoration: none;    
+    color: inherit;
+    color: #ADA193;
+    background-attachment: #59524C; 
+    font-size: 1.5rem; 
+}
+
+svg{
+    width: 1.5rem; 
+    fill: #ADA193; 
+
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li{
+
+    display: block; 
+
+
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close{
+
+    display:block;
+
+}
+
+#nav-checkbox:checked ~ label.nav__toggle .menu{
+
+    display:none; 
+}
+
+@media only screen and (min-width: 960px){
+
+    .nav__toggle{
+
+        display: none;
     }
 
-    .navbar{
+    .nav__menu{
 
         flex-direction: row; 
-        justify-content: space-between;
-
-    }
-    
-    .navbar ul{
-        
-        display: flex;
-        justify-content: space-between; 
-        
     }
 
+    .nav__menu li{
+
+        display: inline-block;
+    }
 }
-
