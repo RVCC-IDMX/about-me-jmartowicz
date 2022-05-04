@@ -40,8 +40,10 @@ My eihgth step was my last step before the final project, and finished the conta
     For the nav bar, I added html in my index.html which included changing my header to conform to the nav bar, which added a nav class nad a divclass with an image, h1, and an unordered list of links inside a div class. I then added a stylesheet for my nav, which changed my scroll behavior to smooth, body settings(box sizing, padding margn to 0), and main padding. For my navbar I set the background color, text color, display, flex direction, font size, and margin. For my logo, I changed the display to flex and aligned it to the center, changed its h1's font size, and tweaked the height and width of the image. 
 For the navigation list, I removed the list style, set the display to block, and changed the padding. For my a tags in the header, I changed the color, background attachment, font size, padding, letter spacing, text decoration to none, and the display to inline block. For the hover function, I changed the color, background color, border radius and outline. For the media query, I changed the display of navbar-links and the unordered list for navbar to flex, with a justify-content of space-inbetween, and for the navbar as a whole I changed the flex-direction to row with space-inbetween.
 
+
 THIS ENDS MY PRE-FINAL PROJECT ABOUT ME WORK
 
+For my final work, I updated my navbar with a hamburger icon, I then tidied up many of my designs and consolidated what I could into one code. I also added 2 articles, one about google maps iframes and one about a defunct automotive company. I also changed the hr's in my gallery and added many new different designs to better suite my webpage. 
 **OUTLINING MY COLOR SCHEME**
 
 I designed my color scheme to be subtle and easy to look at, I think when conceiving a color scheme it may be hard to create good contrast without making it flashy, so I made the sublty of my contrast a priority.
@@ -56,6 +58,16 @@ This second image shows the most basic iteration of the color scheme.
 Any content I did not complete myself came from the instructional material from each about me assignment, as well as various instructional material from:
 https://www.w3schools.com/
 https://developer.mozilla.org/en-US/
+
+Images from the AMC dissertation:
+American Motors Corporation — Wikipédia (wikipedia.org)
+
+Google Maps iFrame;
+https://hashthemes.com/articles/add-google-map-with-iframe-embed-code/
+
+https://blog.duda.co/responsive-google-maps-for-your-website
+
+https://ostraining.com/blog/coding/responsive-google-maps/
 
 **LICENSE**
 
